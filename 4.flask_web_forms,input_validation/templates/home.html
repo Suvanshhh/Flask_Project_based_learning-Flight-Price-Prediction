@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+<!--Tenplate inheritance-->
+{% block content %}
+<h3>Contents:
+    <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li> About</li>
+        <li> Getting started? <a href="{{url_for('signup')}}"> Sign Up </a></li>
+        <li> Already started? <a href="{{url_for('login')}}"> Login </a></li>
+
+        <li> Careers</li>
+        <li> Contact Us</li>
+    </ul>
+</h3>
+{% endblock content %}
